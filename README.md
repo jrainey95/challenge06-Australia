@@ -1,5 +1,20 @@
 # 05 Third-Party APIs: Work Day Scheduler
 
+# Description
+Created a simple calendar application that allows a user to save events for each hour of the day by modifying starter code. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
+
+# Links 
+
+https://github.com/jrainey95/challenge06-Australia
+
+https://jrainey95.github.io/challenge06-Australia/
+
+
+
+## Screenshot
+
+![workday](https://github.com/jrainey95/challenge06-Australia/assets/133160389/8b18404a-7d58-4884-a86a-34fb60ecf9d5)
+
 ## Your Task
 
 Create a simple calendar application that allows a user to save events for each hour of the day by modifying starter code. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
