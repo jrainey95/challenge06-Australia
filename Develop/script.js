@@ -2,8 +2,8 @@
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
 $(document).ready(function () {
-  $('saveBtn').on('click', function() {
-    var value = $(this).siblings('descriptions').val();
+  $('saveBtn').on('click', function () {
+    var value = $(this).siblings('description').val();
     var time = $(this).parent().attr('id');
 
     localStorage.setItem(time, value);
@@ -20,7 +20,7 @@ $(document).ready(function () {
   );
 
   function hourUpdater() {
-    var currentHour = dayjs();
+    var currentHour = dayjs().hour();
 
     $('.time-block').each(function () {
       var blockHour = parseInt($(this).attr('id').split('-')[1]);
@@ -30,15 +30,16 @@ $(document).ready(function () {
       } else if (blockHour === currentHour) {
         $(this).removeClass('past');
         $(this).addClass('present');
+      } else {
         $(this).removeClass('past');
         $(this).removeClass('present');
         $(this).addClass('future');
 
       }
     });
-
-
+  
   }
+  
 
   hourUpdater();
 
